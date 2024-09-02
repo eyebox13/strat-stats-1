@@ -1,0 +1,89 @@
+/* Import Merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #0D0D0D; /* Dark gray (95%) */
+    color: #F2F2F2; /* Light text for dark background */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+    color: #F2F2F2; /* Light gray (5%) */
+}
+
+/* Button and input styles */
+button, .file-button, #fileNameDisplay {
+    background-color: #F2F2F2; /* Light gray */
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Merriweather', serif;
+}
+
+button, .file-button {
+    cursor: pointer;
+}
+
+button:hover, .file-button:hover {
+    background-color: cyan;
+}
+
+/* File upload area styles */
+.file-upload {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#fileNameDisplay {
+    margin-left: 10px;
+    font-style: italic;
+    flex-grow: 1;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Ensure file input and label are same size as buttons */
+.file-label {
+    display: inline-block;
+}
+
+#fileInput {
+    display: none;
+}
+
+/* Spacing */
+#uploadBtn, #continueBtn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Upload status message */
+#uploadStatus {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.success {
+    color: #4CAF50; /* Green */
+}
+
+.error {
+    color: #F44336; /* Red */
+}
+
+/* Teams page specific styles */
+#teamsList label {
+    display: block;
+    margin-bottom: 10px;
+}

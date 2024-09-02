@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Page</title>
+    <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+    <h1>Baseball Stats</h1>
+    <div>
+        <label for="statsType">Select Stats Type:</label>
+        <select id="statsType">
+            <option value="batting">Batting</option>
+            <option value="pitching">Pitching</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" id="qualifiersOnly">
+        <label for="qualifiersOnly">Qualifiers Only</label>
+    </div>
+    <button id="fetchStatsBtn">FETCH STATS</button>
+    <div id="statsTableContainer"></div>
+    <script src="stats.js"></script>
+</body>
+</html>
